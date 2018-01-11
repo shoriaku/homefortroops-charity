@@ -1,0 +1,261 @@
+body {
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  font-family: 'Quattrocento', serif;
+}
+
+div.container {
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "horse"
+    "about"
+    "event"
+    "signup"
+    "footer";
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+header {
+  width: 100%;
+  opacity: 1;
+  grid-area: header;
+
+}
+
+main {
+
+}
+
+section {
+    min-height: 300px;
+
+}
+
+section#horse{
+  grid-area: horse;
+
+}
+
+section#about {
+  background-color: #FFFFFF;
+  text-align: center;
+  grid-area: about;
+}
+
+section#event {
+  grid-area: event;
+  margin-right: 20px;
+}
+
+section#signup {
+  grid-area: signup;
+  padding-left: 30px;
+}
+
+footer {
+  background-color: #ffff99;
+  grid-area: footer;
+  margin-top:40px;
+  padding: 40px;
+}
+
+h1{
+font-family: 'Stardos Stencil', cursive;
+font-size: 75px;
+text-align: center;
+}
+
+h2{
+
+font-size: 50px;
+color: #0c330a;
+
+
+
+}
+
+h3{
+text-align: center;
+
+
+}
+
+img{
+  max-width: 100%;
+
+}
+
+p{
+font-size: 20px; 
+line-height: 1.6;
+}
+
+input{
+
+border: 2px solid #0c330a;
+margin-bottom: 8px;
+margin-right: 5px;
+
+
+}
+
+select{
+
+border: 2px solid #0c330a;
+margin-bottom: 8px;
+
+}
+
+label{
+
+font-size: 15px;
+font-weight: bold;
+
+}
+
+legend{
+
+font-size: 30px;
+margin-bottom: 15px;
+
+}
+
+a{
+  color: #0c330a;
+  font-size: 15px;
+}
+
+a:hover{
+  background-color: #007700;
+
+
+}
+.description{
+font-size: 25px;
+text-align: center;
+
+}
+
+.logo{
+
+padding-left: 20px;
+padding-top: 20px;
+
+
+}
+
+.done{
+
+margin-top: 8px;
+background: #0c330a;
+color: #FFFFFF;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold 15px arial, sans-serif;
+text-shadow: none;
+
+
+}
+
+a.orig{
+
+font-size: 25px;
+
+}
+/* Style the navbar */
+#navbar {
+
+  background-color: #0c330a;
+  overflow: hidden;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+img.right{
+float: right;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+
+/* LIST #2 */
+#list2 {
+  width:100%;
+
+}
+
+#list2 ol {
+  font-style:italic;
+  font-family:Georgia, Times, serif;
+   font-size:40px;
+   color:#000000;  }
+
+#list2 ol li {
+
+ }
+#list2 ol li p {
+  padding:8px;
+  font-family: 'Stardos Stencil', cursive;
+  font-size:20px;
+  color:#FFFFFF;
+  border-left: 10px solid #000000;
+  background-color: #004400;
+}
+
+#list2 ol li p em {
+  display:block;
+ }
+
+@media (min-width: 800px) {
+  div.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "horse horse"
+      "about about"
+      "event signup"
+      "footer footer";
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
